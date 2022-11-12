@@ -61,6 +61,8 @@
     <Compile Include="Assets/Scripts/FollowPlayer.cs" />
     <Compile Include="Assets/Challenge 1/Scripts/FollowPlayerX.cs" />
     <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/FramerateLimiter.cs" />
+    <Compile Include="Assets/Scripts/ChangeCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Course Library/_Source_Files/_LICENSE.txt" />
