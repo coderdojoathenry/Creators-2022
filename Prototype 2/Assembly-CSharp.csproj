@@ -61,6 +61,12 @@
     <Compile Include="Assets/Scripts/SpawnOnInterval.cs" />
     <Compile Include="Assets/Scripts/MoveForward.cs" />
     <Compile Include="Assets/Scripts/DestroyOutOfBounds.cs" />
+    <Compile Include="Assets/Scripts/DetectCollisions.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/PlayerControllerX.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/DestroyOutOfBoundsX.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/DetectCollisionsX.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/MoveForwardX.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/SpawnManagerX.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Course Library/_Source_Files/_LICENSE.txt" />

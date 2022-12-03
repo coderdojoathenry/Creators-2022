@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 20.0f;
     public GameObject projectilePrefab;
+    public float projectileDelay = 0.3f;
+
+    private float timeSinceLastProjectile = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -40,14 +43,21 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Is the spacebar pressed and is it long enough since
+        // we last fired a projectile?
+        if (Input.GetKeyDown(KeyCode.Space) &&
+            timeSinceLastProjectile > projectileDelay)
         {
             // Launch a projectile from the player
             Instantiate(projectilePrefab,
                         transform.position,
                         transform.rotation);
+
+            timeSinceLastProjectile = 0;
         }
-
-
+        else
+        {
+            timeSinceLastProjectile += Time.deltaTime;
+        }
     }
 }
