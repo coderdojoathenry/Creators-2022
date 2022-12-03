@@ -2,4 +2,7 @@
 Repo for CoderDojo Athenry Creators Group for the 2022-2023 Season
 
 ## Prototype 1
-Driving a vehicle down a short roadway, avoiding obstacles, or not.
+Driving a vehicle down a short roadway, avoiding obstacles, or not. Then a track-based multiplayer version.
+
+## Prototype 2
+Feeding hungry animals.
