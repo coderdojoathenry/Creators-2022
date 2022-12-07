@@ -56,17 +56,17 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/PlayerController.cs" />
-    <Compile Include="Assets/Scripts/SpawnManager.cs" />
-    <Compile Include="Assets/Scripts/SpawnOnInterval.cs" />
-    <Compile Include="Assets/Scripts/MoveForward.cs" />
-    <Compile Include="Assets/Scripts/DestroyOutOfBounds.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/DetectCollisionsX.cs" />
     <Compile Include="Assets/Scripts/DetectCollisions.cs" />
     <Compile Include="Assets/Challenge 2/Scripts/PlayerControllerX.cs" />
     <Compile Include="Assets/Challenge 2/Scripts/DestroyOutOfBoundsX.cs" />
-    <Compile Include="Assets/Challenge 2/Scripts/DetectCollisionsX.cs" />
-    <Compile Include="Assets/Challenge 2/Scripts/MoveForwardX.cs" />
+    <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/SpawnManager.cs" />
     <Compile Include="Assets/Challenge 2/Scripts/SpawnManagerX.cs" />
+    <Compile Include="Assets/Challenge 2/Scripts/MoveForwardX.cs" />
+    <Compile Include="Assets/Scripts/SpawnOnInterval.cs" />
+    <Compile Include="Assets/Scripts/MoveForward.cs" />
+    <Compile Include="Assets/Scripts/DestroyOutOfBounds.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Course Library/_Source_Files/_LICENSE.txt" />
