@@ -3694,6 +3694,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4844902911259396, guid: 01bdef6597b249b44a9530ab656246fc, type: 3}
   m_PrefabInstance: {fileID: 834999895}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &844352797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+  m_PrefabInstance: {fileID: 1383900664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &854290179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,9 +4991,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: {x: 150, y: 150, z: 150}
-  spacing: 3
+  spacing: 10
   item: {fileID: 1398889087126080100, guid: 07703da681aa8469f82d2496a364279b, type: 3}
   probability: 0.1
+  groundLayerName: Ground
+  player: {fileID: 844352797}
+  nearestItem: {fileID: 0}
 --- !u!4 &1150316943
 Transform:
   m_ObjectHideFlags: 0
@@ -6059,6 +6067,10 @@ PrefabInstance:
     - target: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: RotationSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 453084650579209848, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: GroundLayers.m_Bits
+      value: 521
       objectReference: {fileID: 0}
     - target: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.y
