@@ -4991,7 +4991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: {x: 150, y: 150, z: 150}
-  spacing: 10
+  spacing: 3
   item: {fileID: 1398889087126080100, guid: 07703da681aa8469f82d2496a364279b, type: 3}
   probability: 0.1
   groundLayerName: Ground
