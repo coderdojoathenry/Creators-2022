@@ -68,6 +68,9 @@
     <Compile Include="Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs" />
     <Compile Include="Assets/StarterAssets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Scripts/ItemScatterer.cs" />
+    <Compile Include="Assets/Scripts/SensorLight.cs" />
+    <Compile Include="Assets/Scripts/LinkScatterToSensor.cs" />
+    <Compile Include="Assets/Scripts/GemDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
