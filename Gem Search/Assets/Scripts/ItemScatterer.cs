@@ -22,7 +22,7 @@ public class ItemScatterer : MonoBehaviour
     void Update()
     {
         FindNearest();
-        ActivateNearest();
+        // ActivateNearest();
     }
 
     private void OnDrawGizmos()
