@@ -9389,6 +9389,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroundLayer: Ground
   DiggingPrefab: {fileID: 6705040095181480506, guid: 9dd424542562e4ed8af155aa1b478cd1, type: 3}
+  ItemScatterer: {fileID: 1150316942}
+  MaxDistToItem: 0.35
+  GemFoundPrefab: {fileID: 1329955384938370193, guid: 4317d4efe8e2c4c40a937f22dbd126d8, type: 3}
+  GemFoundLocation: {fileID: 1259492458}
 --- !u!1001 &1916457729
 PrefabInstance:
   m_ObjectHideFlags: 0
