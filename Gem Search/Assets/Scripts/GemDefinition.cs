@@ -9,4 +9,21 @@ public class GemDefinition : ScriptableObject
     public int Value;
     public GameObject Prefab;
     public Texture2D Icon;
+
+    private Sprite _sprite;
+
+    public Sprite Sprite
+    {
+        get
+        {
+            if (_sprite == null)
+            {
+                _sprite = Sprite.Create(Icon,
+                                        new Rect(0, 0, Icon.width, Icon.height),
+                                        new Vector2(0.5f, 0.5f));
+            }
+
+            return _sprite;
+        }
+    }
 }

@@ -76,6 +76,7 @@
     <Compile Include="Assets/Scripts/RandomGem.cs" />
     <Compile Include="Assets/Scripts/LinkScatterToSensor.cs" />
     <Compile Include="Assets/Scripts/SelfDestruct.cs" />
+    <Compile Include="Assets/Scripts/InventorySlot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
