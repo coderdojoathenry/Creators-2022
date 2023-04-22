@@ -23,6 +23,9 @@ public class InventorySlot : MonoBehaviour,
   private Canvas _canvas;
   private GameObject _draggingIcon;
 
+  private GemInventoryAreaBase.GemInventoryAreaType _type;
+  private GemInventory _gemInventory;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -57,6 +60,16 @@ public class InventorySlot : MonoBehaviour,
     var image = _draggingIcon.AddComponent<Image>();
     image.sprite = GemDefinition.Sprite;
 
+    // Set the size
+    var imageRt = image.GetComponent<RectTransform>();
+    imageRt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, DragIconSize.x);
+    imageRt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, DragIconSize.y);
+
+    // Set the alpha and interactability
+    CanvasGroup canvasGroup = _draggingIcon.AddComponent<CanvasGroup>();
+    canvasGroup.alpha = 0.75f;
+    canvasGroup.blocksRaycasts = false;
+
     OnDrag(eventData);
   }
 
@@ -80,11 +93,32 @@ public class InventorySlot : MonoBehaviour,
 
   public void OnDrop(PointerEventData eventData)
   {
-
+    if (eventData.pointerDrag != null)
+    {
+      InventorySlot slot = eventData.pointerDrag.GetComponent<InventorySlot>();
+      Debug.Log("Someone dropped a " + slot.GemDefinition.name);
+    }
   }
 
   public void OnEndDrag(PointerEventData eventData)
   {
+    if (_draggingIcon != null)
+    {
+      Destroy(_draggingIcon);
+      _draggingIcon = null;
+    }
+  }
 
+  public void SetDetails(GemDefinition gemDefinition, int count)
+  {
+    GemDefinition = gemDefinition;
+    GemCount = count;
+  }
+
+  public void RegisterSlot(GemInventoryAreaBase.GemInventoryAreaType type,
+                           GemInventory inventory)
+  {
+    _type = type;
+    _gemInventory = inventory;
   }
 }

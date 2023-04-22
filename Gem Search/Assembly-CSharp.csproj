@@ -61,6 +61,7 @@
     <Compile Include="Assets/Scripts/LampPost.cs" />
     <Compile Include="Assets/Scripts/SensorLight.cs" />
     <Compile Include="Assets/Scripts/GemDefinition.cs" />
+    <Compile Include="Assets/Scripts/InventorySlot.cs" />
     <Compile Include="Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
     <Compile Include="Assets/StarterAssets/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
@@ -76,7 +77,12 @@
     <Compile Include="Assets/Scripts/RandomGem.cs" />
     <Compile Include="Assets/Scripts/LinkScatterToSensor.cs" />
     <Compile Include="Assets/Scripts/SelfDestruct.cs" />
-    <Compile Include="Assets/Scripts/InventorySlot.cs" />
+    <Compile Include="Assets/Scripts/GemInventory.cs" />
+    <Compile Include="Assets/Scripts/GemInventoryAreaBase.cs" />
+    <Compile Include="Assets/Scripts/GemInventoryAreaStorage.cs" />
+    <Compile Include="Assets/Scripts/GemInventoryAreaCraftingIn.cs" />
+    <Compile Include="Assets/Scripts/GemInventoryAreaCraftingOut.cs" />
+    <Compile Include="Assets/Scripts/GemInventoryAreaSensor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
