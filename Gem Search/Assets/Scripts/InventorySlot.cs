@@ -17,6 +17,7 @@ public class InventorySlot : MonoBehaviour,
   public Image SlotImage;
   public GameObject CountTextBadge;
   public TMP_Text CountText;
+  public TMP_Text NameText;
 
   public Vector2 DragIconSize = new Vector2(40, 40);
 
@@ -46,6 +47,7 @@ public class InventorySlot : MonoBehaviour,
 
     CountTextBadge.SetActive(GemDefinition != null && GemCount > 1);
     CountText.text = GemCount.ToString();
+    NameText.text = (GemDefinition == null || GemCount < 1) ? "" : GemDefinition.name;
   }
 
   public void OnBeginDrag(PointerEventData eventData)
@@ -95,8 +97,12 @@ public class InventorySlot : MonoBehaviour,
   {
     if (eventData.pointerDrag != null)
     {
-      InventorySlot slot = eventData.pointerDrag.GetComponent<InventorySlot>();
-      Debug.Log("Someone dropped a " + slot.GemDefinition.name);
+      InventorySlot fromSlot = eventData.pointerDrag.GetComponent<InventorySlot>();
+
+      if (fromSlot != null)
+      {
+        _gemInventory.DragBetween(fromSlot._type, _type, fromSlot.GemDefinition);
+      }
     }
   }
 

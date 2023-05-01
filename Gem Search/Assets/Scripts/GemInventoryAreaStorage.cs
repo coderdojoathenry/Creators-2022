@@ -1,23 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GemInventoryAreaStorage : GemInventoryAreaBase
 {
+  public GemManager GemManager;
+  public int Score = 0;
+
   public GemInventoryAreaStorage() : base(GemInventoryAreaType.Storage)
   {
 
   }
 
-  // Start is called before the first frame update
-  void Start()
+  public override IEnumerable<GemDefinition> GetSlotEnumerator()
   {
-
+    return GemManager.GemDefinitions.AsEnumerable<GemDefinition>();
   }
 
-  // Update is called once per frame
-  void Update()
+  public override bool Add(GemDefinition gd, bool force = false)
   {
+    Score += gd.Value;
 
+    return base.Add(gd, force);
+  }
+
+  public override bool Remove(GemDefinition gd)
+  {
+    Score -= gd.Value;
+    return base.Remove(gd);
   }
 }

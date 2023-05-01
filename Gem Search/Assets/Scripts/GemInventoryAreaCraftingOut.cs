@@ -9,15 +9,8 @@ public class GemInventoryAreaCraftingOut : GemInventoryAreaBase
 
   }
 
-  // Start is called before the first frame update
-  void Start()
+  public override bool CanAdd(GemDefinition gd)
   {
-        
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-        
+    return false;
   }
 }

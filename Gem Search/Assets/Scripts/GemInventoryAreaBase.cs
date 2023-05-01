@@ -53,10 +53,10 @@ public class GemInventoryAreaBase : MonoBehaviour
     }
   }
 
-  public virtual bool Add(GemDefinition gd)
+  public virtual bool Add(GemDefinition gd, bool force = false)
   {
     bool canAdd = CanAdd(gd);
-    if (canAdd)
+    if (canAdd || force)
     {
       _contents.Add(gd);
       return true;
@@ -73,7 +73,7 @@ public class GemInventoryAreaBase : MonoBehaviour
     return _contents.Count < _maxContentCount.Value;
   }
 
-  public bool Remove(GemDefinition gd)
+  public virtual bool Remove(GemDefinition gd)
   {
     return _contents.Remove(gd);
   }

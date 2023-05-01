@@ -28,6 +28,9 @@ public class ProximitySensor : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+    if (Target == null) 
+      return;
+  
     float distance = (Player.position - Target.position).magnitude;
 
     float signalStrength = MaxSignalStrength / ((distance * distance) + 0.9f);
@@ -104,4 +107,6 @@ public class ProximitySensor : MonoBehaviour
       }
     }
   }
+
+
 }

@@ -9,15 +9,9 @@ public class GemInventoryAreaSensor : GemInventoryAreaBase
 
   }
 
-  // Start is called before the first frame update
-  void Start()
+  public override bool CanAdd(GemDefinition gd)
   {
-        
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-        
+    GemDefinition sameLevel = _contents.Find(p => p.Level == gd.Level);
+    return sameLevel == null;
   }
 }
