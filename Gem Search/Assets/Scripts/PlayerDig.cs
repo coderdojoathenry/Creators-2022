@@ -31,8 +31,13 @@ public class PlayerDig : MonoBehaviour
 
   private void DigResult()
   {
-    float distToNearest = (ItemScatterer.nearestItem.transform.position -
-                           transform.position).magnitude;
+    //float distToNearest = (ItemScatterer.nearestItem.transform.position -
+    //                       transform.position).magnitude;
+
+    Vector3 nearestPos = ItemScatterer.nearestItem.transform.position;
+    Vector3 nearestHoriz = new Vector3(nearestPos.x, 0, nearestPos.z);
+    Vector3 thisHoriz = new Vector3(transform.position.x, 0, transform.position.z);
+    float distToNearest = (nearestHoriz - thisHoriz).magnitude;
 
     if (distToNearest > MaxDistToItem)
       return;

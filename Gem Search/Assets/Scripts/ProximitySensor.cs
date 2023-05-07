@@ -30,8 +30,11 @@ public class ProximitySensor : MonoBehaviour
   {
     if (Target == null) 
       return;
-  
-    float distance = (Player.position - Target.position).magnitude;
+
+    //float distance = (Player.position - Target.position).magnitude;
+    Vector3 playerHorizontal = new Vector3(Player.position.x, 0, Player.position.z);
+    Vector3 targetHorizontal = new Vector3(Target.position.x, 0, Target.position.z);
+    float distance = (playerHorizontal - targetHorizontal).magnitude;
 
     float signalStrength = MaxSignalStrength / ((distance * distance) + 0.9f);
     signalStrength = Mathf.Min(signalStrength, MaxSignalStrength);
@@ -40,7 +43,8 @@ public class ProximitySensor : MonoBehaviour
     float pointingTowards = Vector3.Dot(playerToTarget, Player.forward);
     pointingTowards = Mathf.Max(pointingTowards, 0.0f);
 
-    float adjustedSignalStrength = signalStrength * pointingTowards;
+    float adjustedSignalStrength = signalStrength *
+                                   (0.2f + (0.8f * pointingTowards));
 
     CalculateNeedleAngle(adjustedSignalStrength);
     CalculateBulbDelay(adjustedSignalStrength);
