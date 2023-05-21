@@ -94,6 +94,8 @@
     <Compile Include="Assets/Scripts/GemInventoryAreaBase.cs" />
     <Compile Include="Assets/Scripts/GemInventoryAreaCraftingIn.cs" />
     <Compile Include="Assets/Scripts/GemInventory.cs" />
+    <Compile Include="Assets/Easy Primitive Animals/FarmEdition/Scripts/RotateStand.cs" />
+    <Compile Include="Assets/Easy Primitive Animals/FarmEdition/Scripts/AnimalController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

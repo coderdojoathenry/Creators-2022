@@ -397,7 +397,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4639403826384084482}
   m_Father: {fileID: 1329955383670681109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -490,7 +491,7 @@ MonoBehaviour:
   m_text: You found a Emperor Butterfly gem!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
-  m_sharedMaterial: {fileID: -3636804447946207054, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
+  m_sharedMaterial: {fileID: 4052465979016112918, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -556,3 +557,65 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &215025656723818566
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1329955385007294614}
+    m_Modifications:
+    - target: {fileID: 4799031259754419777, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_Name
+      value: Stars
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+--- !u!4 &4639403826384084482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4799031259754419780, guid: 961ec96a0672ad84998c8b43966fc1c7, type: 3}
+  m_PrefabInstance: {fileID: 215025656723818566}
+  m_PrefabAsset: {fileID: 0}

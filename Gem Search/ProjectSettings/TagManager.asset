@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - Sheep
+  - Cow
+  - Chicken
+  - Pig
+  - Ground
   layers:
   - Default
   - TransparentFX

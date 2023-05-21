@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 854290180}
-  m_IndirectSpecularColor: {r: 0.5046606, g: 0.44015965, b: 0.44689035, a: 1}
+  m_IndirectSpecularColor: {r: 0.5046591, g: 0.44015735, b: 0.44688773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2221,8 +2221,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: START
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9073d8a20b1747741a02520baa8a1ec9, type: 2}
-  m_sharedMaterial: {fileID: 4052465979016112918, guid: 9073d8a20b1747741a02520baa8a1ec9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
+  m_sharedMaterial: {fileID: 4052465979016112918, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2434,8 +2434,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA9 2023 CoderDojo Athenry Creators"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9073d8a20b1747741a02520baa8a1ec9, type: 2}
-  m_sharedMaterial: {fileID: 4052465979016112918, guid: 9073d8a20b1747741a02520baa8a1ec9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
+  m_sharedMaterial: {fileID: 4052465979016112918, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3799,8 +3799,8 @@ MonoBehaviour:
 
     EEE: 4'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9073d8a20b1747741a02520baa8a1ec9, type: 2}
-  m_sharedMaterial: {fileID: 4052465979016112918, guid: 9073d8a20b1747741a02520baa8a1ec9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
+  m_sharedMaterial: {fileID: 4052465979016112918, guid: 3998e498dcf14493c838301cbea5f3b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9014,8 +9014,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 878224438}
   m_HandleRect: {fileID: 878224437}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.9999998
+  m_Value: 0
+  m_Size: 0.9999997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
