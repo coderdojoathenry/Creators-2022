@@ -9,7 +9,11 @@ public class GameTimer : MonoBehaviour
   public TMP_Text TimeText;
   public GameObject[] GameObjectsToDisable;
 
+  public GemInventory GemInventory;
+  public HighScore HighScore;
+
   public GameObject GameOverDialog;
+  public GameObject HighScoreDialog;
 
   private float _startTime;
   private bool _haveEnded = false;
@@ -62,7 +66,19 @@ public class GameTimer : MonoBehaviour
       obj.SetActive(false);
     }
 
-    // Show Game Over
-    GameOverDialog.SetActive(true);
+    // Take control of the mouse
+    Cursor.lockState = CursorLockMode.None;
+
+    // Check the score, is it a high score?
+    if (HighScore.IsHighScore(GemInventory.Score))
+    {
+      // Show High Score Dialog
+      HighScoreDialog.SetActive(true);
+    }
+    else
+    {
+      // Show Game Over
+      GameOverDialog.SetActive(true);
+    }
   }
 }

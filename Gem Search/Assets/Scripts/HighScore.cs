@@ -7,7 +7,8 @@ using System.Text;
 public class HighScore : MonoBehaviour
 {
   public HighScoreEntry[] Entries;
-  const int MAXSCORES = 10;
+  const int MAXSCORES = 11;
+  public bool Reset = false;
 
   // Start is called before the first frame update
   void Start()
@@ -16,7 +17,7 @@ public class HighScore : MonoBehaviour
 
     string storedHighScores = PlayerPrefs.GetString("HighScores");
 
-    if (string.IsNullOrEmpty(storedHighScores))
+    if (Reset || string.IsNullOrEmpty(storedHighScores))
     {
       Entries = new HighScoreEntry[] { new HighScoreEntry() { Name = "AAA", Score = 100 },
                                        new HighScoreEntry() { Name = "MMM", Score = 90 },
@@ -64,12 +65,25 @@ public class HighScore : MonoBehaviour
   {
     List<HighScoreEntry> asList = Entries.ToList();
     asList.Add(new HighScoreEntry() { Name = name, Score = score });
-    asList.Sort((p, q) => p.Score.CompareTo(q.Score));
+    asList.Sort((p, q) => q.Score.CompareTo(p.Score));
     
     while (asList.Count > MAXSCORES)
       asList.RemoveAt(MAXSCORES);
 
     Entries = asList.ToArray();
+
+    Save();
+  }
+
+  public bool IsHighScore(int score)
+  {
+    return score > LowestHighScore();
+  }
+
+  private int LowestHighScore()
+  {
+    // Assumes entries are sorted highest to lowest
+    return Entries.Last<HighScoreEntry>().Score;
   }
 
   private void Save()
