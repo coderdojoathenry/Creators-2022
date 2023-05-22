@@ -87,6 +87,7 @@
     <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\HighScoreEntry.cs" />
     <Compile Include="Assets\Scripts\ItemScatterer.cs" />
+    <Compile Include="Assets\Scripts\CreditsReturn.cs" />
     <Compile Include="Assets\Scripts\SensorGemSlots.cs" />
     <Compile Include="Assets\Scripts\RandomGem.cs" />
     <Compile Include="Assets\Scripts\LinkScatterToSensor.cs" />
@@ -98,7 +99,6 @@
     <Compile Include="Assets\Scripts\GemInventoryAreaCraftingIn.cs" />
     <Compile Include="Assets\Scripts\GemInventory.cs" />
     <Compile Include="Assets\Easy Primitive Animals\FarmEdition\Scripts\RotateStand.cs" />
-    <Compile Include="Assets\Scripts\CreditsReturn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
